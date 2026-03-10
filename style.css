@@ -1,0 +1,199 @@
+/* ==========================================================================
+   ZIVARA JEWELS - CORE DESIGN SYSTEM (CSS VARIABLES)
+   ========================================================================== */
+
+:root {
+  /* 🎨 1. COLOR PALETTE (The "Timeless Elegance" Theme) */
+  --bg-primary: #f9f6f0; /* Soft Cream / Main Background */
+  --bg-secondary: #f0eae1; /* Warm Beige / Cards & Hover States */
+  --bg-dark: #231f20; /* Espresso Charcoal / Footer & Dark Sections */
+  --bg-accent: #2a4b46; /* Deep Teal / Feature Banners */
+
+  --text-primary: #231f20; /* Dark Charcoal / Headings & Main Text */
+  --text-secondary: #5a544f; /* Muted Brown-Grey / Subtitles & Meta text */
+  --text-light: #f9f6f0; /* Soft Cream / Text on dark backgrounds */
+
+  --brand-gold: #c4a47c; /* Champagne Gold / Primary Buttons & Accents */
+  --brand-gold-hover: #b58e5e; /* Darker Gold / Button Hovers */
+
+  --border-light: #e8e1d7; /* Very faint beige for subtle dividers */
+  --border-gold: #c4a47c; /* Gold for active states or luxury borders */
+
+  /* 🖋️ 2. TYPOGRAPHY (Fonts) */
+
+  --font-heading: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-body: "Lato", "Montserrat", system-ui, sans-serif;
+
+  /* 📏 3. TYPOGRAPHY (Sizes - Based on 1rem = 16px) */
+  --text-xs: 0.75rem; /* 12px - Trust badges, footer links */
+  --text-sm: 0.875rem; /* 14px - Navigation, small buttons */
+  --text-base: 1rem; /* 16px - Standard body text, descriptions */
+  --text-lg: 1.125rem; /* 18px - Subheadings, product prices */
+  --text-xl: 1.25rem; /* 20px - Product card titles */
+  --text-2xl: 1.5rem; /* 24px - Section headers (mobile) */
+  --text-3xl: 2rem; /* 32px - Section headers (desktop) */
+  --text-4xl: 3rem; /* 48px - Featured Banner headings */
+  --text-5xl: 4.5rem; /* 72px - Main Hero Heading ("Timeless Elegance") */
+
+  /* 📐 4. SPACING & PADDING (8-Point Grid System) */
+  /* Used for padding, margins, and gaps to ensure perfect rhythm */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 1rem; /* 16px - Standard internal card padding */
+  --space-4: 1.5rem; /* 24px - The exact gap you requested for product grids */
+  --space-5: 2.5rem; /* 40px */
+  --space-6: 4rem; /* 64px - Spacing inside large banners */
+  --space-7: 5rem; /* 80px - The exact gap you requested between sections */
+  --space-8: 7.5rem; /* 120px - Extra breathing room for luxury feel */
+
+  /* 🔳 5. BORDERS & BORDER-RADIUS */
+  --border-thin: 1px solid var(--border-light);
+  --border-gold: 1px solid var(--brand-gold);
+
+  --radius-none: 0px; /* Ultra-luxury brands often use sharp corners */
+  --radius-sm: 4px; /* Very subtle softening for buttons */
+  --radius-md: 8px; /* For main product cards */
+  --radius-full: 9999px; /* For the circular category grid (Rings, Bridal, etc.) */
+
+  /* ☁️ 6. SHADOWS (Soft & Diffused for Luxury) */
+  /* Luxury UI avoids harsh black box-shadows. We use very transparent, tinted shadows. */
+  --shadow-sm: 0 4px 10px rgba(35, 31, 32, 0.04);
+  --shadow-md: 0 10px 24px rgba(35, 31, 32, 0.08); /* Good for floating headers */
+  --shadow-lg: 0 20px 40px rgba(35, 31, 32, 0.12); /* Good for dropdown mega-menus */
+  --shadow-gold: 0 8px 16px rgba(196, 164, 124, 0.2); /* Glowing effect for primary CTA */
+
+  /* ⏱️ 7. TIMING & TRANSITIONS (Animation) */
+  /* High-end sites feel "smooth", not fast and jerky. */
+  --transition-fast: 150ms ease-in-out; /* For button color changes */
+  --transition-base: 300ms ease; /* For standard hover effects */
+  --transition-slow: 600ms cubic-bezier(0.33, 1, 0.68, 1); /* For the smooth image zoom on hover */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+/*---------NAVBAR-------------*/
+
+.navbar {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-thin);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+.nav-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-left {
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.nav-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+.nav-link {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  position: relative;
+  transition: var(--transition-base);
+}
+.nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: var(--brand-gold);
+  transition: var(--transition-base);
+}
+.nav-link:hover {
+  color: var(--brand-gold);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-lg);
+  cursor: pointer;
+}
+.nav-right span:hover {
+  color: var(--brand-gold);
+}
+
+/* HERO SECTION----------------*/
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+.hero-wrapper {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+}
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-tag{
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    letter-spacing: 2px;
+    color: var(--brand-gold);
+    margin-bottom: var(--space-4);
+}
+.hero-title{
+    font-family: var(--font-heading);
+    font-size: var(--text-5xl);
+    color: var(--bg-primary);
+    font-weight: 700;
+    margin-bottom: var(--space-3);
+    line-height: 1.1;
+}
+.hero-desc{
+    font-family: var(--font-body);
+    color: var(--bg-secondary);
+}
