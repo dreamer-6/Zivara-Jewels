@@ -4,49 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ZIVARA Jewels - Fine jewellery crafted since 1994. Explore our curated collection of elegant gold, diamond, and precious stone jewels.">
   <title>ZIVARA Jewels — Fine Jewellery Since 1994</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Josefin+Sans:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav class="navbar">
-    <a href="#" class="logo">ZIVARA</a>
+    <a href="#home" class="logo">ZIVARA</a>
     <ul class="nav-links">
-      <li><a href="" class="links active">home</a></li>
-      <li><a href="" class="links">collection</a></li>
-      <li><a href="" class="links">diamonds</a></li>
-      <li><a href="" class="links">About</a></li>
-      <li><a href="" class="links">contact</a></li>
+      <li><a href="#home" class="links active">Home</a></li>
+      <li><a href="#collections" class="links">Collection</a></li>
+      <li><a href="#diamonds" class="links">Diamonds</a></li>
+      <li><a href="#about" class="links">About</a></li>
+      <li><a href="#contact" class="links">Contact</a></li>
     </ul>
     <div class="nav-actions">
       <button class="nav-btn" aria-label="Search">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="11" cy="11" r="7.5" />
           <path d="m17.5 17.5 4 4" />
         </svg>
       </button>
       <button class="nav-btn" aria-label="Wishlist">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path
-            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
         </svg>
         <span class="nav-badge">3</span>
       </button>
       <button class="nav-btn" aria-label="Account">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="12" cy="8" r="4" />
           <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
         </svg>
       </button>
       <button class="nav-btn" aria-label="Cart">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
           <line x1="3" y1="6" x2="21" y2="6" />
           <path d="M16 10a4 4 0 0 1-8 0" />
@@ -56,33 +53,28 @@
     </div>
   </nav>
 
-  <!-- Hero section -->
-
+  <!-- Hero Section -->
   <section class="hero" id="home">
-    <img src="Resources/z1.png" alt="" class="hero-bg">
+    <img src="Resources/Models/diamond-shoot-hero.png" alt="ZIVARA Jewels collection 2026" class="hero-bg">
     <div class="hero-overlay"></div>
-
     <div class="hero-content">
-      <span class="hero-tag">ZIVARA collection 2026</span>
+      <span class="hero-tag">ZIVARA Collection 2026</span>
       <h1 class="hero-title">Effortless <br><span class="highlight">elegance</span> <br>in every jewel</h1>
       <p class="hero-sub">Crafted for moments that last forever</p>
       <div class="hero-cta">
-        <a href="#" class="cta primary">explore collection
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round">
+        <a href="#collections" class="cta primary">Explore Collection
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
         </a>
-        <a href="#" class="cta secondary">view lookbook</a>
+        <a href="#" class="cta secondary">View Lookbook</a>
       </div>
     </div>
   </section>
 
   <!-- Trust Section -->
-
   <section class="trust">
     <div class="trust-wrap">
-
       <div class="trust-item">
         <span class="trust-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -92,7 +84,6 @@
         </span>
         <p class="trust-title">BIS Hallmarked Gold</p>
       </div>
-
       <div class="trust-item">
         <span class="trust-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -104,7 +95,6 @@
         </span>
         <p class="trust-title">Free & Insured Shipping</p>
       </div>
-
       <div class="trust-item">
         <span class="trust-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -115,7 +105,6 @@
         </span>
         <p class="trust-title">7-Day Easy Returns</p>
       </div>
-
       <div class="trust-item">
         <span class="trust-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -125,118 +114,98 @@
         </span>
         <p class="trust-title">Secure Payments</p>
       </div>
-
     </div>
   </section>
 
   <!-- Category Section -->
-
-  <section class="category">
+  <section class="category" id="collections">
     <div class="section-header">
       <h2 class="section-title">Find Your Perfect Match</h2>
       <p class="section-sub">Shop by Categories</p>
     </div>
-
     <div class="section-content">
       <div class="category-wrap">
-
         <a href="#" class="product-card">
           <div class="product-box">
-            <img src="Resources/product-earrings.png" alt="Earrings">
+            <img src="Resources/Assets/earring.jpg" alt="Diamond Earrings Collection">
           </div>
           <p class="product-type">Earrings</p>
         </a>
-
         <a href="#" class="product-card">
           <div class="product-box">
-            <img src="Resources/product-necklace.png" alt="Necklace">
+            <img src="Resources/Assets/diamond-necklace3.jpg" alt="Gold Necklaces">
           </div>
           <p class="product-type">Necklace</p>
         </a>
-
         <a href="#" class="product-card">
           <div class="product-box">
-            <img src="Resources/b" alt="Bangles">
+            <img src="Resources/Assets/bangle.jpg" alt="Traditional Bangles">
           </div>
           <p class="product-type">Bangles</p>
         </a>
-
         <a href="#" class="product-card">
           <div class="product-box">
-            <img src="Resources/product-ring.png" alt="Rings">
+            <img src="Resources/Assets/rings.jpg" alt="Engagement and Statement Rings">
           </div>
           <p class="product-type">Rings</p>
         </a>
-
         <a href="#" class="product-card">
           <div class="product-box">
-            <img src="Resources/product-mangalsutra.png" alt="Mangalsutra">
+            <img src="Resources/Assets/mangalsutra.png" alt="Sacred Mangalsutra">
           </div>
           <p class="product-type">Mangalsutra</p>
         </a>
-
       </div>
       <div class="category-cta">
         <a href="#" class="cta primary">View All Categories</a>
       </div>
     </div>
-
   </section>
 
-  <!-- For Her -->
+  <!-- For Her Section -->
   <section class="women-jewels">
     <div class="content-wrapper">
-
       <div class="model-box">
-        <img src="Resources/shoot2.jpg" alt="Jewellery for her" class="model-img">
-        <div class="model-overlay"></div>
+        <img src="Resources/Models/shoot2.jpg" alt="Elegant woman wearing ZIVARA jewellery" class="model-img">
       </div>
-
       <div class="content-detail">
-        <!-- <span class="content-tag">ZIVARA Women</span> -->
         <h2 class="content-title">Jewellery for Her</h2>
         <p class="content-sub">
-          Timeless designs crafted to celebrate grace, strength, and elegance.
+          Timeless designs crafted to celebrate grace, strength, and elegance. Each piece tells a story of refined taste and timeless beauty.
         </p>
-
         <a href="#" class="content-link">
           Shop Collection
           <span class="arrow">→</span>
         </a>
       </div>
-
     </div>
   </section>
 
-  <!-- Featured collection -->
-
-  <section class="featured">
+  <!-- Featured Collection -->
+  <section class="featured" id="diamonds">
     <div class="section-header">
       <h2 class="section-title">Featured Collection</h2>
-      <p class="section-sub">Choose what yours</p>
+      <p class="section-sub">Choose what resonates with your spirit</p>
     </div>
-
     <div class="feature-wrapper">
       <a class="feature-card bridal">
-        <img src="Resources/varanasi.jpg" alt="" class="feature-img">
+        <img src="Resources/Models/varanasi.jpg" loading="lazy" alt="Bridal jewellery collection" class="feature-img">
         <div class="feature-overlay"></div>
         <div class="featured-content">
-          <h3 class="jewel-type">Bridal edit</h3>
+          <h3 class="jewel-type">Bridal Edit</h3>
           <p class="jewel-tag">Crafted for your forever moment</p>
         </div>
       </a>
-
       <a class="feature-card diamond">
-        <img src="Resources/z7.jpg" alt="" class="feature-img" class="diamond">
+        <img src="Resources/Models/minmal-shoot3.jpg" alt="Diamond essence collection" class="feature-img">
         <div class="feature-overlay"></div>
         <div class="featured-content">
           <h3 class="jewel-type">Diamond Essence</h3>
           <p class="jewel-tag">Pure brilliance in every detail</p>
         </div>
       </a>
-
       <a class="feature-card everyday">
-        <img src="Resources/shoot1.jpg" alt="" class="feature-img" class="diamond">
+        <img src="Resources/Models/shoot1.jpg" alt="Everyday grace collection" class="feature-img">
         <div class="feature-overlay"></div>
         <div class="featured-content">
           <h3 class="jewel-type">Everyday Grace</h3>
@@ -246,101 +215,89 @@
     </div>
   </section>
 
-  <!-- Trending Products -->
-
+  <!-- Signature Pieces -->
   <section class="trending">
     <div class="section-header">
       <h2 class="section-title">Signature Pieces</h2>
       <p class="section-sub">Curated for timeless elegance</p>
     </div>
-
     <div class="trending-grid">
       <div class="signature-card">
         <div class="signature-box">
-          <img src="Resources/product-ring.png" alt="" class="signature-img">
+          <img src="Resources/Assets/halo-ring1.jpg" alt="Halo Ring with brilliant cut diamonds" class="signature-img">
         </div>
         <div class="signature-desc">
           <h3 class="signature-name">Halo Ring</h3>
           <p class="signature-price">₹85,000</p>
         </div>
       </div>
-
       <div class="signature-card">
         <div class="signature-box">
-          <img src="Resources/floral.jpg" alt="" class="signature-img">
+          <img src="Resources/Assets/gold-necklace1.png" alt="Gold Pendant Necklace with diamond" class="signature-img">
         </div>
         <div class="signature-desc">
           <h3 class="signature-name">Gold Pendant Necklace</h3>
           <p class="signature-price">₹1,78,000</p>
         </div>
       </div>
-
       <div class="signature-card">
         <div class="signature-box">
-          <img src="Resources/product-ring.png" alt="" class="signature-img">
+          <img src="Resources/Assets/stud-earring.jpg" alt="Classic Stud Earrings" class="signature-img">
         </div>
         <div class="signature-desc">
           <h3 class="signature-name">Classic Stud Earrings</h3>
           <p class="signature-price">₹25,000</p>
         </div>
       </div>
-
       <div class="signature-card">
-        <!--         <div class="badge">new</div> -->
         <div class="signature-box">
-          <img src="Resources/product-ring.png" alt="" class="signature-img">
+          <img src="Resources/Assets/char-braclet.jpg" alt="Charm Bracelet with precious stones" class="signature-img">
         </div>
         <div class="signature-desc">
-          <h3 class="signature-name">Charm Bracelet </h3>
+          <h3 class="signature-name">Charm Bracelet</h3>
           <p class="signature-price">₹65,000</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Shop by ctegory -->
+  <!-- Shop by Edit -->
   <section class="edit">
     <div class="section-header">
       <h2 class="section-title">Shop by Edit</h2>
       <p class="section-sub">Curated for every moment</p>
     </div>
-
     <div class="edit-grid">
-
       <a href="#" class="edit-card">
-        <img src="Resources/model1.webp" class="edit-img">
+        <img src="Resources/Models/Elegant smile and sparkling jewellery.png" alt="Jewellery for women" class="edit-img">
         <div class="edit-overlay"></div>
         <div class="edit-content">
           <h3>The Women's Edit</h3>
           <p>Grace in every detail</p>
         </div>
       </a>
-
       <a href="#" class="edit-card">
-        <img src="Resources/men.jpg" class="edit-img">
+        <img src="Resources/Models/Men Thoughtful gaze and silver rings.jpg" alt="Jewellery for men" class="edit-img">
         <div class="edit-overlay"></div>
         <div class="edit-content">
           <h3>The Men's Edit</h3>
           <p>Bold. Refined. Timeless.</p>
         </div>
       </a>
-
       <a href="#" class="edit-card">
-        <img src="Resources/gift.jpg" class="edit-img">
+        <img src="Resources/Models/Portrait of a young girl in pink dress.png" alt="Jewellery for kids and families" class="edit-img">
         <div class="edit-overlay"></div>
         <div class="edit-content">
           <h3>The Kids Edit</h3>
           <p>Perfect for every occasion</p>
         </div>
       </a>
-
     </div>
   </section>
 
   <!-- Offer Banner -->
-
   <section class="offer">
-    <img src="Resources/banner1.png" alt="" class="banner-img">
+    <img src="Resources/Assets/jewel-combo-banner.png" alt="Limited time offer on diamond collection" class="banner-img">
     <div class="offer-content">
       <p class="offer-tag">Limited Time</p>
       <h2>Enjoy 20% Off on Diamond Collection</h2>
@@ -349,82 +306,73 @@
   </section>
 
   <!-- Story Section -->
-
-  <section class="story">
+  <section class="story" id="about">
     <div class="story-container">
-
       <div class="story-image">
-        <img src="Resources/story.jpg" alt="Craftsmanship">
+        <img src="Resources/Assets/zivar-shop.png" alt="ZIVARA Jewels craftsmanship and heritage">
       </div>
-
       <div class="story-content">
         <span class="story-tag">Our Story</span>
         <h2>Crafting Elegance Since 1994</h2>
         <p>
-          At ZIVARA, every piece is designed with precision, passion, and a deep appreciation
-          for timeless beauty. Our craftsmanship reflects a legacy of elegance that transcends generations.
+          At ZIVARA, every piece is designed with precision, passion, and a deep appreciation for timeless beauty. Our craftsmanship reflects a legacy of elegance that transcends generations. From initial design sketches to the final polish, we ensure every detail meets our exacting standards.
         </p>
         <a href="#" class="story-btn">Discover Our Story</a>
       </div>
-
     </div>
   </section>
 
+  <!-- Newsletter Section -->
   <section class="newsletter">
-  <div class="newsletter-content">
-    <span class="newsletter-tag">Exclusive Access</span>
-    <h2>Join the ZIVARA Circle</h2>
-    <p>Be the first to discover new collections, private offers, and timeless pieces.</p>
-
-    <form class="newsletter-form">
-      <input type="email" placeholder="Enter your email">
-      <button type="submit">Join Now</button>
-    </form>
-  </div>
-</section>
-
- <!-- Footer -->
-
- <footer class="footer">
-  <div class="footer-container">
-
-    <div class="footer-col brand">
-      <h2>ZIVARA</h2>
-      <p>Timeless elegance crafted for every moment.</p>
+    <div class="newsletter-content">
+      <span class="newsletter-tag">Exclusive Access</span>
+      <h2>Join the ZIVARA Circle</h2>
+      <p>Be the first to discover new collections, private offers, and timeless pieces crafted just for you.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Join Now</button>
+      </form>
     </div>
+  </section>
 
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Collection</a></li>
-        <li><a href="#">Diamonds</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-col brand">
+        <h2>ZIVARA</h2>
+        <p>Timeless elegance crafted for every moment. Since 1994.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#collections">Collection</a></li>
+          <li><a href="#diamonds">Diamonds</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Necklaces</a></li>
+          <li><a href="#">Earrings</a></li>
+          <li><a href="#">Bracelets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: support@zivara.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Chennai, Tamil Nadu, India</p>
+      </div>
     </div>
-
-    <div class="footer-col">
-      <h4>Categories</h4>
-      <ul>
-        <li><a href="#">Rings</a></li>
-        <li><a href="#">Necklaces</a></li>
-        <li><a href="#">Earrings</a></li>
-        <li><a href="#">Bracelets</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>© 2026 ZIVARA. All rights reserved. Crafted with precision.</p>
     </div>
+  </footer>
 
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p>Email: support@zivara.com</p>
-      <p>Phone: +91 98765 43210</p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 ZIVARA. All rights reserved.</p>
-  </div>
-</footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
