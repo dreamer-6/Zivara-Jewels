@@ -40,6 +40,32 @@ const updateActiveLink = () => {
 
 updateActiveLink();
 
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const openBtn = document.getElementById("openMenu");
+  const closeBtn = document.getElementById("closeMenu");
+  const navLinks = document.getElementById("navLinks");
+
+  // Open the side menu
+  openBtn.addEventListener("click", () => {
+    navLinks.classList.add("show-menu");
+  });
+
+  // Close the side menu
+  closeBtn.addEventListener("click", () => {
+    navLinks.classList.remove("show-menu");
+  });
+
+  // Optional: Close menu when a link is clicked
+  const links = document.querySelectorAll(".links");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show-menu");
+    });
+  });
+});
+
+
 // ===== INTERSECTION OBSERVER FOR LAZY ANIMATIONS =====
 const observerOptions = {
   threshold: 0.1,
