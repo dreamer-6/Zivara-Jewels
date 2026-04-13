@@ -1,109 +1,86 @@
-# 💎 ZIVARA Jewels — Luxury Jewellery Landing Page
+# Zivara Jewels
 
-A premium, modern, and fully responsive jewellery landing page built using HTML, CSS, and JavaScript.
-This project focuses on elegant UI design, smooth interactions, and a high-end user experience.
+Zivara Jewels is a luxury jewellery landing page built with plain HTML, CSS, and JavaScript. The project focuses on editorial visuals, polished interactions, and a premium brand feel without relying on frameworks or a build step.
 
----
+## Overview
 
-## 🚀 Live Preview
+This site presents a fictional jewellery brand through a long-form landing page with:
 
-👉 https://dreamer-6.github.io/Zivara-Jewels/
+- a sticky navigation bar with section-based active states
+- a cinematic hero section with call-to-action buttons
+- category browsing and featured collection sections
+- signature product cards with pricing
+- curated edits for women, men, and kids
+- a brand story section and newsletter signup
+- a responsive layout designed for desktop, tablet, and mobile screens
 
----
+## Live Preview
 
-## 📌 Project Overview
+ https://dreamer-6.github.io/Zivara-Jewels/
 
-ZIVARA Jewels is a concept-based luxury jewellery website designed to showcase collections with a minimal, elegant, and premium aesthetic.
+## Tech Stack
 
-The goal of this project was to:
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Google Fonts
 
-* Improve frontend design skills
-* Build a real-world landing page structure
-* Practice responsive layouts and UI interactions
+## Key Features
 
----
+- Responsive layout with a mobile menu
+- Smooth scrolling between page sections
+- Scroll-aware navigation highlight
+- Intersection Observer based reveal animations
+- Product card tilt interaction
+- Ripple feedback on action buttons
+- Lightweight newsletter email validation
+- Image fade-in behavior on load
 
-## ✨ Features
+## Project Structure
 
-* Responsive design (Mobile, Tablet, Desktop)
-* Clean and structured layout
-* Smooth scrolling navigation
-* Active navbar highlighting on scroll
-* Interactive hover effects
-* Product card animations
-* Mobile-friendly menu toggle
-* Newsletter form validation
-* Micro-interactions (ripple effect, tilt effect)
-
----
-
-## 🛠️ Tech Stack
-
-* HTML5
-* CSS3 (Custom properties, Flexbox, Grid)
-* JavaScript
-
----
-
-## 🎯 Key Highlights
-
-* Designed using a **luxury minimal design system**
-* Implemented reusable CSS variables for consistency
-* Focused on **UI/UX principles and visual hierarchy**
-* Added **smooth animations and transitions**
-* Built **interactive components without frameworks**
-
----
-
-## 📂 Folder Structure
-
-```
-├── index.html
-├── style.css
-├── script.js
-├── Resources/
-│   ├── Models/
-│   └── Assets/
+```text
+Zivara-Jewels/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.md
+`-- Resources/
+    |-- Assets/
+    |-- Logos/
+    |-- Models/
+    `-- ensemble.jpg
 ```
 
----
+## Running Locally
 
-## 📱 Responsive Design
+No installation is required.
 
-This project is fully responsive and optimized for:
+1. Open `index.html` directly in a browser, or
+2. Serve the folder with a local static server such as VS Code Live Server
 
-* Mobile devices
-* Tablets
-* Large screens
+## Customization Notes
 
----
+- Update text content in `index.html`
+- Adjust colors, spacing, and typography tokens in `style.css`
+- Replace product and editorial imagery inside `Resources/`
+- Extend or refine interactions in `script.js`
 
-## 📈 What I Learned
+## Current Behavior
 
-* Structuring real-world landing pages
-* Creating reusable design systems
-* Improving UI/UX thinking
-* Adding JavaScript for better user interaction
-* Managing responsiveness effectively
+The newsletter form currently provides front-end feedback only. It does not submit data to a backend service.
 
----
+## Ideas For Next Improvements
 
-## 🔮 Future Improvements
+- connect the newsletter form to a real API
+- improve keyboard accessibility and focus states
+- optimize and compress large image assets
+- add more semantic markup and ARIA support
+- turn placeholder buttons into real product or collection links
 
-* Add backend integration (cart, login)
-* Improve accessibility (ARIA, keyboard navigation)
-* Optimize performance (image compression, lazy loading)
-* Add dark mode toggle
+## Author
 
----
+Created as a front-end design and interaction project for the Zivara Jewels brand concept.
 
-## 🤝 Feedback
-
-I'm always open to feedback and suggestions to improve my work!
-
----
-
-## 📬 Connect With Me
+## Connect With Me
 
 https://www.linkedin.com/in/vasanthans/
-
